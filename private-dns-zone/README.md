@@ -2,7 +2,7 @@
 
 ```
 module "dns_zone_amap_teusshared01" {                 
-  source = "../../pipeline-lib/terraform/azure/private-dns-zone"
+  source = "./private-dns-zone"
 
   # To find DNS Zone Name: https://docs.microsoft.com/en-us/azure/private-link/private-endpoint-dns
   dns_zone_name = "privatelink.database.windows.net"
